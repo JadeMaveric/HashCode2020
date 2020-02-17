@@ -32,7 +32,7 @@ int main() {
         cin >> w[i];
         cout << "\n";
     }
-    knapsack(N, W, v, w, k);  //calling knapsack function
+    cout << "MAX: " << knapsack(N, W, v, w, k);  //calling knapsack function
 
     return 0;
 }
@@ -54,7 +54,7 @@ int knapsack(int N, int W, int* v, int* w, int* k) {
         }
         if (DEBUG) cout << endl;
     }
-    cout << "MAX: " << k[N * W + W] << endl;  //printing final o/p
-    return 0;
+    
+    return k[N * W + W];
 }
 
